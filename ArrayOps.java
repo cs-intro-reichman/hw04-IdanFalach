@@ -18,6 +18,7 @@ public class ArrayOps {
                 return expectedNumbersArr[i];
             }
         }
+
         return -1;
     }
 
@@ -56,6 +57,7 @@ public class ArrayOps {
     public static boolean isSorted(int[] array) {
         boolean isIncreasing = false;
         boolean isDecreasing = false;
+
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] > array[i + 1]) {
                 isDecreasing = true;
@@ -66,6 +68,7 @@ public class ArrayOps {
             if (isIncreasing && isDecreasing)
                 return false;
         }
+
         return true;
     }
 
@@ -78,5 +81,4 @@ public class ArrayOps {
 
         return false;
     }
-
 }
